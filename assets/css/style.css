@@ -1,0 +1,52 @@
+html, body {
+    height: 100%; /* Garante que o body e o HTML ocupem 100% da altura da janela */
+    margin: 0; /* Remove margens padrões */
+    display: flex; /* Ativa Flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    background-image: url(../img/zodiaco.webp);
+    background-size: cover; /* Faz com que a imagem cubra toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
+    text-align: center;
+    color: azure;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 600px;
+    background-color: rgb(0, 1, 53);
+    border-radius: 10px;
+    padding: 20px 50px;
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.5), /* Sombra clara */
+                0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra escura leve */
+    transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 15px 30px rgba(255, 255, 255, 0.7), 
+                0 6px 15px rgba(0, 0, 0, 0.2); /* Sombra mais intensa ao passar o mouse */
+}
+
+.btn {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Suave animação de cor e tamanho */
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
